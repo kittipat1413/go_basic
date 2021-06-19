@@ -21,6 +21,7 @@ func itemExists(arrayType interface{}, item interface{}) bool {
 
 	if arr.Kind() != reflect.Array {
 		fmt.Printf("Invalid data-type")
+		return false
 	}
 
 	for i := 0; i < arr.Len(); i++ {
