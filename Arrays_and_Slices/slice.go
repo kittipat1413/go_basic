@@ -134,4 +134,5 @@ func main() {
 		slice2 = append(slice2, slice1...)
 		fmt.Println(slice2)
 	}
+
 }
