@@ -118,9 +118,20 @@ func main() {
 
 	/* Check if Item Exists */
 	{
+		fmt.Printf("\nCheck if Item Exists\n")
+
 		var strSlice = []string{"India", "Canada", "Japan", "Germany", "Italy"}
 		fmt.Println(itemExists(strSlice, "Canada"))
 		fmt.Println(itemExists(strSlice, "Africa"))
 	}
 
+	/* Append a slice to an existing slice */
+	{
+		fmt.Printf("\nAppend a slice to an existing slice\n")
+
+		var slice1 = []string{"india", "japan", "canada"}
+		var slice2 = []string{"australia", "russia"}
+		slice2 = append(slice2, slice1...)
+		fmt.Println(slice2)
+	}
 }
